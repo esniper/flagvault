@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "morafyn.flagvault.com"
+        }
+      ],
+      "destination": "/morafyn/:path*"
+    }
+  ]
+}
