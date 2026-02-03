@@ -9,19 +9,19 @@ export default function Footer() {
         <nav className="flex gap-6">
           <Link
             href="/privacy"
-            className="transition-colors duration-150 hover:text-text-primary"
+            className="transition-colors duration-150 ease hover:text-text-primary"
           >
             Privacy
           </Link>
           <Link
             href="/terms"
-            className="transition-colors duration-150 hover:text-text-primary"
+            className="transition-colors duration-150 ease hover:text-text-primary"
           >
             Terms
           </Link>
           <Link
             href="/support"
-            className="transition-colors duration-150 hover:text-text-primary"
+            className="transition-colors duration-150 ease hover:text-text-primary"
           >
             Support
           </Link>
