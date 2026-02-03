@@ -13,8 +13,20 @@ export default function Header() {
         </Link>
         <nav className="flex gap-6 text-[15px] font-medium text-text-secondary">
           <Link
+            href="/#products"
+            className="transition-colors duration-150 ease hover:text-text-primary"
+          >
+            Products
+          </Link>
+          <Link
+            href="/about"
+            className="transition-colors duration-150 ease hover:text-text-primary"
+          >
+            About
+          </Link>
+          <Link
             href="/support"
-            className="transition-colors duration-150 ease-in-out hover:text-text-primary"
+            className="transition-colors duration-150 ease hover:text-text-primary"
           >
             Contact
           </Link>
