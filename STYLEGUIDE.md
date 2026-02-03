@@ -11,15 +11,21 @@ Current product lineup includes MoraFyn (macOS Pomodoro timer) and 1NinetyFive (
 ## Color Palette
 
 ### Core Brand Colors
-- **Background**: `#0A0A0A` (near-black)
-- **Surface**: `#141414` (cards, elevated sections)
-- **Surface Hover**: `#1E1E1E`
-- **Border**: `#2A2A2A` (subtle dividers)
+
+The brand palette is derived from MoraFyn's default terracotta theme — warm, earthy tones that feel grounded and calm.
+
+- **Background**: `#0F0D0C` (warm near-black)
+- **Surface**: `#1A1614` (cards, elevated sections)
+- **Surface Hover**: `#241F1C`
+- **Border**: `#2E2723` (warm subtle dividers)
 
 ### Brand Accent
-- **Primary accent**: `#3B82F6` (clean blue — neutral across all products, conveys trust/technology)
-- **Primary accent hover**: `#2563EB`
-- **Accent muted**: `rgba(59, 130, 246, 0.12)` (backgrounds, tags)
+
+- **Primary accent**: `#C8725E` (terracotta — the signature MoraFyn work color)
+- **Primary accent hover**: `#B5654F`
+- **Accent muted**: `rgba(200, 114, 94, 0.12)` (backgrounds, tags)
+- **Secondary accent**: `#6B9DAD` (slate blue — from the break state)
+- **Tertiary accent**: `#D4B896` (warm beige — from the long break state)
 
 ### Per-Product Accent Colors
 
@@ -27,20 +33,20 @@ Each product page may use its own accent color **in place of** the primary accen
 
 | Product | Accent | Hover | Usage |
 |---------|--------|-------|-------|
-| FlagVault (brand) | `#3B82F6` | `#2563EB` | Landing page, shared pages |
-| MoraFyn | `#E05A33` | `#C94E2B` | MoraFyn product page only |
-| 1NinetyFive | `#6366F1` | `#4F46E5` | 1NinetyFive product page only |
+| FlagVault (brand) | `#C8725E` | `#B5654F` | Landing page, shared pages |
+| MoraFyn | `#C8725E` | `#B5654F` | MoraFyn product page |
+| 1NinetyFive | `#6366F1` | `#4F46E5` | 1NinetyFive product page |
 
-When adding a new product, assign it an accent that has sufficient contrast on `#0A0A0A` (minimum 4.5:1 for text, 3:1 for large UI elements) and does not duplicate an existing product accent.
+When adding a new product, assign it an accent that has sufficient contrast on `#0F0D0C` (minimum 4.5:1 for text, 3:1 for large UI elements) and does not duplicate an existing product accent.
 
 ### Text Colors
-- **Primary text**: `#F0F0F0`
-- **Secondary text**: `#8A8A8A`
-- **Muted text**: `#555555`
+- **Primary text**: `#F0EBE7` (warm white)
+- **Secondary text**: `#8A817A` (warm gray)
+- **Muted text**: `#5C5550`
 
 ### Gradients
 - Use sparingly — hero sections only
-- **Brand gradient**: linear gradient from `#3B82F6` to `#8B5CF6`
+- **Brand gradient**: linear gradient from `#C8725E` to `#D4B896` (terracotta to beige)
 - **Product pages**: may substitute the product accent as the gradient start color
 - **Background ambient glow**: radial gradient of the relevant accent at 5-8% opacity behind hero sections
 
@@ -96,7 +102,7 @@ When adding a new product, assign it an accent that has sufficient contrast on `
 ### Buttons
 
 **Primary (CTA)**:
-- Background: current page accent color (brand blue by default)
+- Background: current page accent color (`#C8725E` by default)
 - Text: `#FFFFFF`, 16px, weight 600
 - Padding: `14px 28px`
 - Border radius: `10px`
@@ -105,25 +111,25 @@ When adding a new product, assign it an accent that has sufficient contrast on `
 
 **Secondary**:
 - Background: transparent
-- Border: 1px solid `#2A2A2A`
-- Text: `#F0F0F0`
+- Border: 1px solid `#2E2723`
+- Text: `#F0EBE7`
 - Same padding/radius as primary
-- Hover: border `#555555`, background `#141414`
+- Hover: border `#5C5550`, background `#1A1614`
 
 **Ghost/text link**:
 - No background or border
-- Text: `#8A8A8A`
-- Hover: text `#F0F0F0`
+- Text: `#8A817A`
+- Hover: text `#F0EBE7`
 - Underline offset 4px on hover
 
 ### Cards
 
-- Background: `#141414`
-- Border: 1px solid `#2A2A2A`
+- Background: `#1A1614`
+- Border: 1px solid `#2E2723`
 - Border radius: `16px`
 - Padding: `32px`
 - No box-shadow by default
-- Hover (if interactive): border `#3A3A3A`, `translateY(-2px)`, `box-shadow: 0 8px 32px rgba(0,0,0,0.3)`
+- Hover (if interactive): border `#3D3530`, `translateY(-2px)`, `box-shadow: 0 8px 32px rgba(0,0,0,0.3)`
 
 ### Product Cards (Landing Page)
 
@@ -132,16 +138,16 @@ Same base card styles, plus:
 - Product icon/logo at 48px
 - Product name in H3
 - One-line description in secondary text
-- Platform tags (e.g., "macOS", "iOS") in `12px` label style with `#1E1E1E` background and `border-radius: 6px`
+- Platform tags (e.g., "macOS", "iOS") in `12px` label style with `#241F1C` background and `border-radius: 6px`
 
 ### Navigation
 
-- Fixed top, blurred: `background: rgba(10,10,10,0.8); backdrop-filter: blur(12px)`
-- Border bottom: 1px solid `#2A2A2A`
+- Fixed top, blurred: `background: rgba(15,13,12,0.8); backdrop-filter: blur(12px)`
+- Border bottom: 1px solid `#2E2723`
 - Height: 64px
-- "FlagVault" wordmark on left (no elaborate logo — plain text in heading font, weight 700, 18px)
+- "FlagVault" wordmark on left (plain text in heading font, weight 700, 18px)
 - Nav links on right: Products (dropdown), About, Contact
-- Links: `#8A8A8A`, hover `#F0F0F0`, weight 500, 15px
+- Links: `#8A817A`, hover `#F0EBE7`, weight 500, 15px
 - Mobile: hamburger, slide-in from right
 
 ### Product Page Header
@@ -155,7 +161,7 @@ Each product page includes a header banner with:
 ### App Screenshots
 
 - `border-radius: 12px`
-- Border: 1px solid `#2A2A2A`
+- Border: 1px solid `#2E2723`
 - Optional ambient glow behind hero screenshot
 - Flat presentation — no lifted drop shadows
 
@@ -165,8 +171,8 @@ Each product page includes a header banner with:
 
 - Lucide icons or SF Symbols style (1.5px stroke)
 - Body context: 20px
-- Color: `#8A8A8A` default, `#F0F0F0` active/hover
-- Feature icons: 40px inside 64px rounded container (`border-radius: 14px`, background `#1E1E1E`)
+- Color: `#8A817A` default, `#F0EBE7` active/hover
+- Feature icons: 40px inside 64px rounded container (`border-radius: 14px`, background `#241F1C`)
 
 ---
 
