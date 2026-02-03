@@ -94,7 +94,7 @@ export default function Home() {
                 name="MoraFyn"
                 description="A focused Pomodoro timer for macOS with a warm, distraction-free interface."
                 platforms={["macOS"]}
-                comingSoon
+                href="/morafyn"
               />
             </ScrollReveal>
             <ScrollReveal delay={160}>

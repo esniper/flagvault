@@ -1,10 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProductCardProps {
   name: string;
   description: string;
   platforms: string[];
   icon?: string;
+  href?: string;
   comingSoon?: boolean;
 }
 
@@ -13,10 +15,11 @@ export default function ProductCard({
   description,
   platforms,
   icon,
+  href,
   comingSoon = false,
 }: ProductCardProps) {
-  return (
-    <div className="bg-surface border border-border rounded-2xl p-8 transition-all duration-300 ease hover:border-border-hover hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
+  const content = (
+    <>
       {icon && (
         <div className="mb-4">
           <Image
@@ -45,6 +48,19 @@ export default function ProductCard({
           </span>
         )}
       </div>
-    </div>
+    </>
   );
+
+  const className =
+    "block bg-surface border border-border rounded-2xl p-8 transition-all duration-300 ease hover:border-border-hover hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(0,0,0,0.3)]";
+
+  if (href) {
+    return (
+      <Link href={href} className={className}>
+        {content}
+      </Link>
+    );
+  }
+
+  return <div className={className}>{content}</div>;
 }
